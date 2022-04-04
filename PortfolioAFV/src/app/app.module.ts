@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { LoginComponent } from './components/login/login.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LoginComponent } from './components/login/login.component';
     FooterComponent,
     LogoAPComponent,
     RedesComponent,
-    LoginComponent
+    LoginComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule
