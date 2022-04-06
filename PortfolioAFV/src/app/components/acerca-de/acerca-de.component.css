@@ -1,0 +1,11 @@
+#fotoperfil {
+    border-radius: 50%;
+    width: 80%;
+    left: 2em;
+    bottom: 5em;
+    position: relative;
+}
+
+#barra {
+    background-color: #033E72
+}
