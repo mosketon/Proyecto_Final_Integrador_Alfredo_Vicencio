@@ -1,0 +1,16 @@
+#fotoperfil {
+    border-radius: 50%;
+    width: 10em;
+    left: 2em;
+    bottom: 5em;
+    
+}
+
+#barra {
+    background-color: #033E72
+}
+
+.card{
+    border-radius: 1em;
+}
+
