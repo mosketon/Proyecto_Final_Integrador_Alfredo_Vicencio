@@ -1,0 +1,19 @@
+.card-img-top{
+    border-radius: 50%;
+    width: 10em;
+}
+#barra {
+    background-color: #033E72;
+    margin: .2em;
+    border-radius: .5em;
+}
+
+.card{
+    border-radius: .5em;
+    
+    
+}
+.row{
+    flex-wrap: nowrap;
+    margin: .2em;
+}
