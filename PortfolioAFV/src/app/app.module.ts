@@ -14,6 +14,11 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { HttpClientModule} from '@angular/common/http';
 import { PortfolioService } from './services/portfolio.service';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { HabilidadesComponent } from './components/habilidades/habilidades.component';
+import { EspecializacionesComponent } from './components/especializaciones/especializaciones.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { GaleriaComponent } from './components/galeria/galeria.component';
 
 
 @NgModule({
@@ -27,7 +32,12 @@ import { PortfolioService } from './services/portfolio.service';
     LoginComponent,
     BannerComponent,
     AcercaDeComponent,
-    EducacionComponent
+    EducacionComponent,
+    ExperienciaComponent,
+    HabilidadesComponent,
+    EspecializacionesComponent,
+    ProyectosComponent,
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,
