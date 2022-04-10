@@ -1,0 +1,18 @@
+.d-flex{
+    display: flex!important;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
