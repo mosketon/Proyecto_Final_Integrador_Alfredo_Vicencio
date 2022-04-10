@@ -9,6 +9,11 @@ import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { LoginComponent } from './components/login/login.component';
 import { BannerComponent } from './components/banner/banner.component';
+<<<<<<< HEAD
+=======
+import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
+>>>>>>> Acerca-De
 
 @NgModule({
   declarations: [
@@ -19,7 +24,13 @@ import { BannerComponent } from './components/banner/banner.component';
     LogoAPComponent,
     RedesComponent,
     LoginComponent,
+<<<<<<< HEAD
     BannerComponent
+=======
+    BannerComponent,
+    AcercaDeComponent,
+    EducacionComponent
+>>>>>>> Acerca-De
   ],
   imports: [
     BrowserModule
