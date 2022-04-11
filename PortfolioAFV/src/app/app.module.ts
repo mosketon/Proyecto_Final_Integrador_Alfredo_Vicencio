@@ -20,7 +20,7 @@ import { EspecializacionesComponent } from './components/especializaciones/espec
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 
-
+import { NgCircleProgressModule } from 'ng-circle-progress';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +42,8 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
   imports: [
     BrowserModule,
     
-    HttpClientModule
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]
