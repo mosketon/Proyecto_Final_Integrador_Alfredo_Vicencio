@@ -1,6 +1,7 @@
 .card-img-top{
     border-radius: 50%;
     width: 10em;
+    background-color: #000000;
 }
 #barra {
     background-color: #033E72;
@@ -14,6 +15,6 @@
     
 }
 .row{
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: .2em;
 }
