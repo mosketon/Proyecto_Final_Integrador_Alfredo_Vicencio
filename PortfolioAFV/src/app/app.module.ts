@@ -21,6 +21,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     BrowserModule,
     
     HttpClientModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    BrowserAnimationsModule
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]
