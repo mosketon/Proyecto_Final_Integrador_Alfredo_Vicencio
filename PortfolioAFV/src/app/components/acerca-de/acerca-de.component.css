@@ -1,16 +1,22 @@
 #fotoperfil {
     border-radius: 50%;
-    width: 10em;
+    width: 12em;
     left: 2em;
-    bottom: 5em;
+    bottom: -.5em;
+    position: relative;
     
 }
 
 #barra {
-    background-color: #033E72
+    background-color: #033E72;
+    margin: .2em;
+    border-radius: .5em;
+    text-align: center;
+
 }
 
 .card{
     border-radius: 1em;
+    margin: .2em;
 }
 

@@ -1,1 +1,23 @@
-
+<!-- Seccion Educacion grupo de tarjetas -->
+<div class="px-3 py-2 text-white" id="barra">
+    <div class="container-fluid">
+      <h1 style="text-align: center;">Educación</h1>
+    </div>
+  </div>
+  
+  <div class="row row-cols-1 row-cols-md-3">
+    <div class="card" *ngFor="let escuelas of educacionList">
+      <img [src]="escuelas.foto" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h2 class="card-title">{{escuelas.nombre}}</h2>
+        <ul class="card-text" style="text-align: justify;">
+          <li> Nivel: {{escuelas.nivel}}</li>
+          <li> Titulo: {{escuelas.titulo}} </li>
+          <li>Ingreso: {{escuelas.ingreso}}</li>
+          <li>Egreso: {{escuelas.egreso}}</li>
+        </ul>
+  
+  
+      </div>
+    </div>
+  </div>

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
@@ -13,8 +14,20 @@ import { BannerComponent } from './components/banner/banner.component';
 =======
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
+<<<<<<< HEAD
 >>>>>>> Acerca-De
+=======
+import { HttpClientModule} from '@angular/common/http';
+import { PortfolioService } from './services/portfolio.service';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { HabilidadesComponent } from './components/habilidades/habilidades.component';
+import { EspecializacionesComponent } from './components/especializaciones/especializaciones.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { GaleriaComponent } from './components/galeria/galeria.component';
+>>>>>>> Creacion-resto-de-componentes
 
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,13 +42,26 @@ import { EducacionComponent } from './components/educacion/educacion.component';
 =======
     BannerComponent,
     AcercaDeComponent,
+<<<<<<< HEAD
     EducacionComponent
 >>>>>>> Acerca-De
+=======
+    EducacionComponent,
+    ExperienciaComponent,
+    HabilidadesComponent,
+    EspecializacionesComponent,
+    ProyectosComponent,
+    GaleriaComponent
+>>>>>>> Creacion-resto-de-componentes
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({}),
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

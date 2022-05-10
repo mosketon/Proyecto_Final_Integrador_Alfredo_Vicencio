@@ -1,6 +1,7 @@
 .card-img-top{
     border-radius: 50%;
     width: 10em;
+
 }
 #barra {
     background-color: #033E72;
@@ -12,8 +13,10 @@
     border-radius: .5em;
     align-items: center;
     
+    
 }
 .row{
     flex-wrap: wrap;
     margin: .2em;
+    border-radius: .5em;
 }
