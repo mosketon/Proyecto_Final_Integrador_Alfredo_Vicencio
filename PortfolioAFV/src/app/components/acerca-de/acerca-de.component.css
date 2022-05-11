@@ -19,4 +19,9 @@
     border-radius: 1em;
     margin: .2em;
 }
-
+#edit{
+    position: absolute;
+    width: 5em;
+    
+    margin: 0;
+}

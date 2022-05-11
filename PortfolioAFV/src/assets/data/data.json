@@ -52,20 +52,21 @@
     ],
     "habilidades": [
         {
-            "nombre": "Hard Skills",
-            "nivel": "Primario y Secundario Completo",
-            "titulo": "Bachiller Auxiliar en Informatica",
-            "ingreso": "1983",
-            "egreso": "1995",
-            "foto": "../../../assets/imagenes/Habilidades-proyectos/20190328_121517.jpg"
+            "nombre": "HTML5",
+            "porcentaje": "25"
+        
         },
         {
-            "nombre": "Soft Skills",
-            "nivel": "Superior",
-            "titulo": "Técnico Superior en Seguridad Pública",
-            "ingreso": "1996",
-            "egreso": "1997",
-            "foto": "../../../assets/imagenes/Habilidades-proyectos/IMG-20210915-WA0002.jpg"
+            "nombre": "CSS",
+            "porcentaje": "25"            
+        },
+        {
+            "nombre": "Java",
+            "porcentaje": "15"            
+        },
+        {
+            "nombre": "JavaScript",
+            "porcentaje": "15"            
         }
     ],
     "proyectos": [
