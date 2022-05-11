@@ -10,13 +10,8 @@ import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { LoginComponent } from './components/login/login.component';
 import { BannerComponent } from './components/banner/banner.component';
-<<<<<<< HEAD
-=======
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
-<<<<<<< HEAD
->>>>>>> Acerca-De
-=======
 import { HttpClientModule} from '@angular/common/http';
 import { PortfolioService } from './services/portfolio.service';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
@@ -24,7 +19,6 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
 import { EspecializacionesComponent } from './components/especializaciones/especializaciones.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
->>>>>>> Creacion-resto-de-componentes
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -37,22 +31,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LogoAPComponent,
     RedesComponent,
     LoginComponent,
-<<<<<<< HEAD
-    BannerComponent
-=======
     BannerComponent,
     AcercaDeComponent,
-<<<<<<< HEAD
-    EducacionComponent
->>>>>>> Acerca-De
-=======
     EducacionComponent,
     ExperienciaComponent,
     HabilidadesComponent,
     EspecializacionesComponent,
     ProyectosComponent,
     GaleriaComponent
->>>>>>> Creacion-resto-de-componentes
   ],
   imports: [
     BrowserModule,

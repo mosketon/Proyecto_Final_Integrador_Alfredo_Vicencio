@@ -1,6 +1,6 @@
 {
     "nombre": "Alfredo Fernando Vicencio",
-    "fotoperfil": "./assets/imagenes/fotoperfil.jpg",
+    "fotoperfil": "src/assets/banner(2).jpg",
     "titulo": {
         "licenciatura": "Licenciado en Seguridad Pública",
         "tiro": "Instructor de tiro ITA",
