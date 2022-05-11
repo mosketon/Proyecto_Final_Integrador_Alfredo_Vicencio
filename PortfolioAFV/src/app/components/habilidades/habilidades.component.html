@@ -5,35 +5,25 @@
 </div>
 
 
-<div class="row row-cols-1 row-cols-md-3">
-    <div class="card">
-
-        <circle-progress [percent]="85" [radius]="80" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+<div class="row row-cols-1 row-cols-md-4">
+    <div class="card" *ngFor="let habilidades of habilidadesList">
+       
+      <!--  <div class="card-body">
+            <circle-progress [percent]="{{habilidades.porcentaje}}" [radius]="80" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
             [outerStrokeColor]="'#033E72'" [innerStrokeColor]="'#808080'" [animation]="true" [animationDuration]="300">
         </circle-progress>
+            <h3 class="card-title">{{habilidades.nombre}}</h3>
+            <p class="card-text" style="text-align: justify;"></p>
+        </div>
+    </div>!-->
 
-        <div class="card-body">
-            <h5 class="card-title">Hard Skills</h5>
-            <p class="card-text" style="text-align: justify;"></p>
-        </div>
+    <div class="card-body">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="" aria-valuemin="0" aria-valuemax="100">25%</div>
+          </div>
+        <h3 class="card-title">{{habilidades.nombre}}</h3>
+        <p class="card-text" style="text-align: justify;"></p>
     </div>
+</div>
 
-    <div class="card">
-        <circle-progress [percent]="85" [radius]="80" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#033E72'" [innerStrokeColor]="'#808080'" [animation]="true" [animationDuration]="300">
-        </circle-progress>
-        <div class="card-body">
-            <h5 class="card-title">Soft Skills</h5>
-            <p class="card-text" style="text-align: justify;"></p>
-        </div>
-    </div>
-    <div class="card">
-        <circle-progress [percent]="85" [radius]="80" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#033E72'" [innerStrokeColor]="'#808080'" [animation]="true" [animationDuration]="300">
-        </circle-progress>
-        <div class="card-body">
-            <h5 class="card-title">Soft Skills</h5>
-            <p class="card-text" style="text-align: justify;"></p>
-        </div>
-    </div>
 </div>
