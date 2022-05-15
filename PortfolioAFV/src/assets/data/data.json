@@ -92,5 +92,15 @@
                 
             ]
         }
+    ],
+
+    "experiencia":[
+        {
+            
+            "nombre": "Grupo Especial de Operaciones Federales (GEOF)",
+            "parrafo": " *** Completar ***",
+            "foto": "../../../assets/imagenes/geof.jpg"
+
+        }
     ]
 }
