@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { RouterModule } from '@angular/router';
+
+import { AppRoutingModule } from './app-routing.module';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -22,6 +26,8 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,14 +44,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HabilidadesComponent,
     EspecializacionesComponent,
     ProyectosComponent,
-    GaleriaComponent
+    GaleriaComponent,
+    IniciarSesionComponent
   ],
   imports: [
     BrowserModule,
     
     HttpClientModule,
     NgCircleProgressModule.forRoot({}),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule,
+   
+   AppRoutingModule
+    
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]
