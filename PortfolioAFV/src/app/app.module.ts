@@ -16,7 +16,7 @@ import { LoginComponent } from './components/login/login.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PortfolioService } from './services/portfolio.service';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
@@ -27,6 +27,8 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { InterceptorService } from './services/interceptor.service';
 
 @NgModule({
   declarations: [
@@ -49,16 +51,18 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
   ],
   imports: [
     BrowserModule,
-    
+
     HttpClientModule,
     NgCircleProgressModule.forRoot({}),
     BrowserAnimationsModule,
     RouterModule,
-   
-   AppRoutingModule
-    
+    AppRoutingModule,
+    ReactiveFormsModule
+
   ],
-  providers: [PortfolioService],
+  providers: [PortfolioService,
+    { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
