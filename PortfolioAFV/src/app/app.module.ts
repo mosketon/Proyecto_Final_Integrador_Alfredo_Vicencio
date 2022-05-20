@@ -29,6 +29,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { InterceptorService } from './services/interceptor.service';
+import { PersonaService } from './services/persona.service';
+import { educacion } from './model/educacion.model';
+import { EducacionService } from './services/educacion.service';
+import { EspecializacionesService } from './services/especializaciones.service';
+import { ExperienciaService } from './services/experiencia.service';
+import { HabilidadesService } from './services/habilidades.service';
+import { ProyectosService } from './services/proyectos.service';
 
 @NgModule({
   declarations: [
@@ -60,7 +67,8 @@ import { InterceptorService } from './services/interceptor.service';
     ReactiveFormsModule
 
   ],
-  providers: [PortfolioService,
+  providers: [PortfolioService, PersonaService, EducacionService, EspecializacionesService, 
+    ExperienciaService, HabilidadesService, ProyectosService,
     { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true },
   ],
   bootstrap: [AppComponent]
