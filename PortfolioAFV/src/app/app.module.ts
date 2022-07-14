@@ -16,7 +16,7 @@ import { LoginComponent } from './components/login/login.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { PortfolioService } from './services/portfolio.service';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
@@ -27,15 +27,14 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { InterceptorService } from './services/interceptor.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PersonaService } from './services/persona.service';
-import { educacion } from './model/educacion.model';
 import { EducacionService } from './services/educacion.service';
 import { EspecializacionesService } from './services/especializaciones.service';
 import { ExperienciaService } from './services/experiencia.service';
 import { HabilidadesService } from './services/habilidades.service';
 import { ProyectosService } from './services/proyectos.service';
+
 
 @NgModule({
   declarations: [
@@ -54,22 +53,22 @@ import { ProyectosService } from './services/proyectos.service';
     EspecializacionesComponent,
     ProyectosComponent,
     GaleriaComponent,
-    IniciarSesionComponent
-  ],
+    IniciarSesionComponent,
+      ],
   imports: [
     BrowserModule,
-
     HttpClientModule,
     NgCircleProgressModule.forRoot({}),
     BrowserAnimationsModule,
     RouterModule,
     AppRoutingModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    FormsModule,
+    
   ],
   providers: [PortfolioService, PersonaService, EducacionService, EspecializacionesService, 
     ExperienciaService, HabilidadesService, ProyectosService,
-    { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true },
+    
   ],
   bootstrap: [AppComponent]
 })
