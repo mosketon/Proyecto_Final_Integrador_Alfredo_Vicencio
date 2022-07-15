@@ -17,7 +17,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { HttpClientModule} from '@angular/common/http';
-import { PortfolioService } from './services/portfolio.service';
+
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { EspecializacionesComponent } from './components/especializaciones/especializaciones.component';
@@ -34,6 +34,8 @@ import { EspecializacionesService } from './services/especializaciones.service';
 import { ExperienciaService } from './services/experiencia.service';
 import { HabilidadesService } from './services/habilidades.service';
 import { ProyectosService } from './services/proyectos.service';
+import { AutenticacionService } from './services/autenticacion.service';
+import { TokenService } from './services/token.service';
 
 
 @NgModule({
@@ -66,8 +68,8 @@ import { ProyectosService } from './services/proyectos.service';
     FormsModule,
     
   ],
-  providers: [PortfolioService, PersonaService, EducacionService, EspecializacionesService, 
-    ExperienciaService, HabilidadesService, ProyectosService,
+  providers: [ PersonaService, EducacionService, EspecializacionesService, 
+    ExperienciaService, HabilidadesService, ProyectosService, AutenticacionService,TokenService
     
   ],
   bootstrap: [AppComponent]
