@@ -1,17 +1,13 @@
 export class experiencia{
     id?: number;
-    nombre: String;
-    lugar: String;
-    desde: String;
-    hasta: String;
-    foto: String;
+    nombreEx: string;
+    descripcionEx: string;
+    fotoEx: string;
 
-    constructor (nombre: String, lugar: String, desde: String, hasta: String, foto: String){
+    constructor (nombreEx: string, descripcionEx: string, fotoEx: string){
 
-        this.nombre = nombre;
-        this.lugar = lugar;
-        this.desde = desde;
-        this.hasta = hasta;
-        this.foto = foto;
+        this.nombreEx = nombreEx;
+        this.descripcionEx = descripcionEx;
+        this.fotoEx = fotoEx;
     }
 }

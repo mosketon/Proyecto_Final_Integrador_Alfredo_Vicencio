@@ -36,6 +36,8 @@ import { HabilidadesService } from './services/habilidades.service';
 import { ProyectosService } from './services/proyectos.service';
 import { AutenticacionService } from './services/autenticacion.service';
 import { TokenService } from './services/token.service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 
 
 @NgModule({
@@ -56,6 +58,8 @@ import { TokenService } from './services/token.service';
     ProyectosComponent,
     GaleriaComponent,
     IniciarSesionComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
       ],
   imports: [
     BrowserModule,

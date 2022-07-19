@@ -10,7 +10,7 @@
 
 .card{
     border-radius: .5em;
-    align-items:flex-start;
+    /*align-items:flex-start;*/
     
 }
 .row{
@@ -22,7 +22,7 @@
     border-radius: 50%;
     width: 10em;
     position:relative;
-    margin-top: 2.5em;
+    /*margin-top: 2.5em;*/
     margin-left: 2em;
     
 }

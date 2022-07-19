@@ -7,9 +7,26 @@ import { experiencia } from '../model/experiencia.model';
   providedIn: 'root'
 })
 export class ExperienciaService {
-URL = "http://localhost:8080";
-constructor(private http: HttpClient) { }
-public getExperiencia(): Observable<experiencia>{
-  return this.http.get<experiencia>(this.URL+'ver/experiencia')
+expURL = "http://localhost:8080/experiencia/";
+constructor(private httpClient: HttpClient) { }
+
+public lista(): Observable<experiencia []>{
+  return this.httpClient.get<experiencia[]>(this.expURL + 'lista');
+}
+
+public detail (id:number): Observable<experiencia>{
+  return this.httpClient.get<experiencia>(this.expURL + `detail/${id}`);
+ }
+  
+public save(experiencia: experiencia): Observable<any>{
+  return this.httpClient.post<any>(this.expURL + 'create', experiencia);
+}
+
+public update (id:number, experiencia: experiencia): Observable<any>{
+  return this.httpClient.put <any> (this.expURL +`update/${id}`, experiencia );
+}
+
+public delete(id: number): Observable<any>{
+  return this.httpClient.delete<any>(this.expURL + `delete/${id}`);
 }
 }
