@@ -1,22 +1,29 @@
-#fotoperfil {
+.card-img-top{
     border-radius: 50%;
-    width: 12em;
-    left: 2em;
-    bottom: -.5em;
-    position: relative;
-    
+    width: 10em;
 }
-
 #barra {
     background-color: #033E72;
     margin: .2em;
     border-radius: .5em;
-    text-align: center;
-
 }
 
 .card{
-    border-radius: 1em;
+    border-radius: .5em;
+    /*align-items:flex-start;*/
+    margin: .2em;
+    
+}
+.row{
+    flex-wrap: wrap;
     margin: .2em;
 }
 
+#fotoperfil{
+    border-radius: 50%;
+    width: 10em;
+    position:relative;
+    /*margin-top: 2.5em;*/
+    margin-left: 2em;
+    
+}

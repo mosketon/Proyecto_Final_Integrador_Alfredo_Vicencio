@@ -5,7 +5,40 @@
 }
 
 .card{
-    border-radius: .5em ;
+    border-radius: .5em;
+    /*align-items:flex-end;*/
+    justify-content:space-between
+    
+    
+}
+
+#editbuttons{
+    background-color: #033E72;
+    margin: 0;
+    border-color: #033E72;
+}
+.btn-group{
+    background-color: #033E72
+}
+#cardtitle{
+    background-color: #033E72;
+    margin:.1em
+
+}
+#plus{
+    position: relative;
+}
+
+.card-img-top{
+    border-radius: 50%;
+    width: 10em;
+}
+.row{
+    flex-wrap: wrap;
     margin: .2em;
+    border-radius: .5em;
+}
+.container-fluid{
+    width: auto;
     
 }

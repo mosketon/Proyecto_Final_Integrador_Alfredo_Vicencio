@@ -1,0 +1,53 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-3 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                      
+
+                            <h2 class="fw-bold mb-2 text-uppercase">Edicion de Experiencia</h2>
+                            <p class="text-white-50 mb-5">Por favor, ingrese las modificaciones</p>
+                            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                                <div class="container-fluid">
+                                    <div class="form-group">
+                                        <label for="nombreEx" class="form-label">
+                                            <h3>Nombre del Lugar</h3>
+                                        </label>
+                                        <input type="text" class="form-control" id="nombreEx" name="nombreEx"
+                                            [(ngModel)]="expe.nombreEx" required>
+                                    </div>
+                                    <br>
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="Descripcion">
+                                            <h3>Descripcion</h3>
+                                        </label>
+                                        <textarea class="form-control" id="descripcionEx" rows="4" name="descripcionEx"
+                                            [(ngModel)]="expe.descripcionEx" required></textarea>
+
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="fotoEx" class="form-label">
+                                            <h3>Imagen </h3>
+                                        </label>
+                                        <input type="text" class="form-control" id="fotoEx" name="fotoEx"
+                                            [(ngModel)]="expe.fotoEx" required>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <button class="btn btn-light btn-rounded">Actualizar Experiencia</button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</section>

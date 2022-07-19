@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./habilidades.component.css']
 })
 export class HabilidadesComponent implements OnInit {
-
+habilidadesList:any
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
