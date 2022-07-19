@@ -21,7 +21,9 @@
     background-color: #033E72
 }
 #cardtitle{
-    background-color: #033E72
+    background-color: #033E72;
+    margin:.1em
+
 }
 #plus{
     position: relative;
