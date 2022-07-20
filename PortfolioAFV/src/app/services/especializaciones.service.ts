@@ -7,9 +7,26 @@ import { especializaciones } from '../model/especializaciones.model';
   providedIn: 'root'
 })
 export class EspecializacionesService {
-URL = "http://localhost:8080";
-  constructor(private http: HttpClient) { }
-  public getEspecializaciones(): Observable<especializaciones>{
-    return this.http.get<especializaciones>(this.URL+'ver/especializaciones')
+  espeURL = "http://localhost:8080/especializaciones/";
+  constructor(private httpClient: HttpClient) { }
+  
+  public lista(): Observable<especializaciones []>{
+    return this.httpClient.get<especializaciones[]>(this.espeURL + 'lista');
+  }
+  
+  public detail (id:number): Observable<especializaciones>{
+    return this.httpClient.get<especializaciones>(this.espeURL + `detail/${id}`);
+   }
+    
+  public save(especializaciones: especializaciones): Observable<any>{
+    return this.httpClient.post<any>(this.espeURL + 'create', especializaciones);
+  }
+  
+  public update (id:number, especializaciones: especializaciones): Observable<any>{
+    return this.httpClient.put <any> (this.espeURL +`update/${id}`, especializaciones );
+  }
+  
+  public delete(id: number): Observable<any>{
+    return this.httpClient.delete<any>(this.espeURL + `delete/${id}`);
   }
 }

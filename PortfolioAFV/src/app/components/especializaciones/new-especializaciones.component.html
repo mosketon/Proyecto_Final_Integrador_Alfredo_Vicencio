@@ -1,0 +1,52 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-3 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+
+                        <h2 class="fw-bold mb-2 text-uppercase">Ingreso de Especializacion</h2>
+                        <p class="text-white-50 mb-5">Por favor, ingrese la nueva Especializacion</p>
+                        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                            <div class="container-fluid">
+                                <div class="form-group">
+                                    <label for="nombreEspe" class="form-label">
+                                        <h3>Nombre de la Especializacion</h3>
+                                    </label>
+                                    <input type="text" class="form-control" id="nombreEspe" name="nombreEspe"
+                                        [(ngModel)]="nombreEspe" required>
+                                </div>
+                                <br>
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="descripcion">
+                                        <h3>Descripcion</h3>
+                                    </label>
+                                    <textarea class="form-control" id="form4Example3" rows="4" name="descripcionEspe"
+                                        [(ngModel)]="descripcionEspe"></textarea>
+
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="fotoEspe" class="form-label">
+                                        <h3>Imagen </h3>
+                                    </label>
+                                    <input type="text" class="form-control" id="fotoEx" name="fotoEx"
+                                        [(ngModel)]="fotoEspe" required>
+                                </div>
+                                <br>
+                                <div>
+                                    <button class="btn btn-light btn-rounded">Agregar Especializacion</button>
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
