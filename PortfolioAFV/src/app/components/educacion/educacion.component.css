@@ -6,8 +6,23 @@
 
 .card{
     border-radius: .5em;
+    /*align-items:flex-end;*/
+    justify-content:space-between
     
-    justify-content: center;
+    
+    
+}
+
+#editbuttons{
+    background-color: #033E72;
+    margin: 0;
+    border-color: #033E72;
+}
+.btn-group{
+    background-color: #033E72
+}
+#cardtitle{
+    background-color: #033E72;
     
 }
 #plus{
@@ -25,6 +40,5 @@
 }
 .container-fluid{
     width: auto;
-    align-items: flex-end;
+    
 }
-

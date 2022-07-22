@@ -1,13 +1,13 @@
 export class habilidades{
     id?: number;
-    tipo: String;
-    porcentaje: String;
-    foto: String;
+    nombreHabi: string;
+    porcentajeHabi: number;
+    fotoHabi: string;
 
-    constructor (tipo: String, porcentaje: String, foto: String){
+    constructor (nobreHabi: string, porcentajeHabi:number, fotoHabi: string){
 
-        this.tipo = tipo;
-        this.porcentaje = porcentaje;
-        this.foto = foto;
+        this.nombreHabi = nobreHabi;
+        this.porcentajeHabi = porcentajeHabi;
+        this.fotoHabi = fotoHabi;
     }
 }

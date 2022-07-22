@@ -7,10 +7,26 @@ import { habilidades } from '../model/habilidades.model';
   providedIn: 'root'
 })
 export class HabilidadesService {
-URL = "http://localhost:8080";
-
-constructor(private http: HttpClient) { }
-  public gethabilidades(): Observable<habilidades>{
-    return this.http.get<habilidades>(this.URL+'ver/habilidades')
+  habiURL = "http://localhost:8080/habilidades/";
+  constructor(private httpClient: HttpClient) { }
+  
+  public lista(): Observable<habilidades []>{
+    return this.httpClient.get<habilidades[]>(this.habiURL + 'lista');
+  }
+  
+  public detail (id:number): Observable<habilidades>{
+    return this.httpClient.get<habilidades>(this.habiURL + `detail/${id}`);
+   }
+    
+  public save(habilidades: habilidades): Observable<any>{
+    return this.httpClient.post<any>(this.habiURL + 'create', habilidades);
+  }
+  
+  public update (id:number, habilidades: habilidades): Observable<any>{
+    return this.httpClient.put <any> (this.habiURL +`update/${id}`, habilidades );
+  }
+  
+  public delete(id: number): Observable<any>{
+    return this.httpClient.delete<any>(this.habiURL + `delete/${id}`);
   }
 }

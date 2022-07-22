@@ -1,0 +1,57 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-3 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+
+
+                        <h2 class="fw-bold mb-2 text-uppercase">Edicion Acerca de mi</h2>
+                        <p class="text-white-50 mb-5">Por favor, ingrese las modificaciones</p>
+                        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                            <div class="container-fluid">
+                                <div class="form-group">
+                                    <label for="nombre" class="form-label">
+                                        <h3>Nombres</h3>
+                                    </label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre"
+                                        [(ngModel)]="perso.nombre" required>
+                                </div>
+                                <br>
+                                <label for="apellido" class="form-label">
+                                    <h3>Apellidos</h3>
+                                </label>
+                                <input type="text" class="form-control" id="apellido" name="apellido"
+                                    [(ngModel)]="perso.apellido" required>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="acercaDe">
+                                    <h3>Acerca De mi</h3>
+                                </label>
+                                <textarea class="form-control" id="acercaDe" rows="4" name="acercaDe"
+                                    [(ngModel)]="perso.acercaDe" required></textarea>
+
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="fotoPerfil" class="form-label">
+                                    <h3>Foto de perfil</h3>
+                                </label>
+                                <input type="text" class="form-control" id="fotoPerfil" name="fotoPerfil"
+                                    [(ngModel)]="perso.fotoperfil" required>
+                            </div>
+                            <br>
+                            <div>
+                                <button class="btn btn-light btn-rounded">Actualizar</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

@@ -1,13 +1,13 @@
 export class especializaciones{
     id?: number;
-    especialización: String;
-    descripcion: String;
-    foto: String;
+    nombreEspe: string;
+    descripcionEspe: string;
+    fotoEspe: string;
 
-    constructor (especializacion: String, descripcion: String, foto: String){
+    constructor (nombreEspe: string, descripcionEspe: string, fotoEspe: string){
 
-        this.especialización = especializacion;
-        this.descripcion = descripcion;
-        this.foto = foto;
+        this.nombreEspe = nombreEspe;
+        this.descripcionEspe = descripcionEspe;
+        this.fotoEspe = fotoEspe;
     }
 }

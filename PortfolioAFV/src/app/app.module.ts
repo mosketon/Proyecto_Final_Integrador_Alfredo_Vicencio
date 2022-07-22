@@ -38,6 +38,16 @@ import { AutenticacionService } from './services/autenticacion.service';
 import { TokenService } from './services/token.service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { EditEspecializacionesComponent } from './components/especializaciones/edit-especializaciones.component';
+import { NewEspecializacionesComponent } from './components/especializaciones/new-especializaciones.component';
+import { NewProyectosComponent } from './components/proyectos/new-proyectos.component';
+import { EditProyectosComponent } from './components/proyectos/edit-proyectos.component';
+import { EditHabilidadesComponent } from './components/habilidades/edit-habilidades.component';
+import { NewHabilidadesComponent } from './components/habilidades/new-habilidades.component';
+import { interceptorProvider } from './services/interceptor-service';
 
 
 @NgModule({
@@ -60,6 +70,15 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     IniciarSesionComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
+    EditAcercaDeComponent,
+    NewEducacionComponent,
+    EditEducacionComponent,
+    EditEspecializacionesComponent,
+    NewEspecializacionesComponent,
+    NewProyectosComponent,
+    EditProyectosComponent,
+    EditHabilidadesComponent,
+    NewHabilidadesComponent,
       ],
   imports: [
     BrowserModule,
@@ -73,7 +92,7 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     
   ],
   providers: [ PersonaService, EducacionService, EspecializacionesService, 
-    ExperienciaService, HabilidadesService, ProyectosService, AutenticacionService,TokenService
+    ExperienciaService, HabilidadesService, ProyectosService, AutenticacionService,TokenService, interceptorProvider,
     
   ],
   bootstrap: [AppComponent]

@@ -1,19 +1,13 @@
 export class educacion{
     id?: number;
-    establecimiento: String;
-    lugar: String;
-    desde: String;
-    hasta: String;
-    titulo: String;
-    foto: String;
+    nombreEdu: string;
+    descripcionEdu: string;
+    fotoEdu: string;
 
-    constructor (establecimiento: String, lugar: String, desde: String, hasta: String, titulo:String, foto: String){
+    constructor (nombreEdu: string, descripcionEdu: string, fotoEdu: string){
 
-        this.establecimiento = establecimiento;
-        this.lugar = lugar;
-        this.desde = desde;
-        this.hasta = hasta;
-        this.titulo = titulo;
-        this.foto = foto;
+        this.nombreEdu = nombreEdu;
+        this.descripcionEdu = descripcionEdu;
+        this.fotoEdu = fotoEdu;
     }
 }
