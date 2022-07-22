@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+<<<<<<< Updated upstream
 
 import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 
+=======
+import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+>>>>>>> Stashed changes
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -26,6 +31,7 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+<<<<<<< Updated upstream
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PersonaService } from './services/persona.service';
@@ -49,6 +55,10 @@ import { EditHabilidadesComponent } from './components/habilidades/edit-habilida
 import { NewHabilidadesComponent } from './components/habilidades/new-habilidades.component';
 import { interceptorProvider } from './services/interceptor-service';
 
+=======
+import { AppRoutingModule } from './app-routing.module';
+import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -67,6 +77,7 @@ import { interceptorProvider } from './services/interceptor-service';
     EspecializacionesComponent,
     ProyectosComponent,
     GaleriaComponent,
+<<<<<<< Updated upstream
     IniciarSesionComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
@@ -94,6 +105,18 @@ import { interceptorProvider } from './services/interceptor-service';
   providers: [ PersonaService, EducacionService, EspecializacionesService, 
     ExperienciaService, HabilidadesService, ProyectosService, AutenticacionService,TokenService, interceptorProvider,
     
+=======
+    IniciarSesionComponent
+  ],
+  imports: [
+    BrowserModule,
+    RouterOutlet,
+    RouterModule,
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({}),
+    BrowserAnimationsModule,
+    AppRoutingModule
+>>>>>>> Stashed changes
   ],
   bootstrap: [AppComponent]
 })

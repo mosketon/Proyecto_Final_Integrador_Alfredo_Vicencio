@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< Updated upstream
 import { Router } from '@angular/router';
 import { LoginUsuario } from 'src/app/model/login-usuario';
 import { AutenticacionService } from 'src/app/services/autenticacion.service';
 import { TokenService } from 'src/app/services/token.service';
+=======
+>>>>>>> Stashed changes
 
 @Component({
   selector: 'app-iniciar-sesion',
@@ -11,6 +14,7 @@ import { TokenService } from 'src/app/services/token.service';
 })
 export class IniciarSesionComponent implements OnInit {
 
+<<<<<<< Updated upstream
   isLogged = false;
   isLogginFail = false;
   loginUsuario!: LoginUsuario;
@@ -44,6 +48,11 @@ export class IniciarSesionComponent implements OnInit {
       this.errMsj = err.error.mensaje;
       console.log(this.errMsj);
     })
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+>>>>>>> Stashed changes
   }
 
 }

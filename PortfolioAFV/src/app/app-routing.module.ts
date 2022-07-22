@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
@@ -32,12 +33,26 @@ const routes: Routes = [
   {path: "edit-acercaDe/:id", component:EditAcercaDeComponent},
   
   {path:"",redirectTo:'body',pathMatch:'full' }
+=======
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { BodyComponent } from './components/body/body.component';
+import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
+
+const routes: Routes = [
+  {path:'body', component:BodyComponent},
+  {path: 'iniciar-sesion', component:IniciarSesionComponent}
+>>>>>>> Stashed changes
 ]
 
 
 @NgModule({
   declarations: [],
   imports: [RouterModule.forRoot(routes)],
+<<<<<<< Updated upstream
   exports: [RouterModule]
+=======
+  
+>>>>>>> Stashed changes
 })
 export class AppRoutingModule { }
