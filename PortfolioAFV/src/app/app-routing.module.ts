@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 import { BodyComponent } from './components/body/body.component';
@@ -17,7 +17,7 @@ import { NewProyectosComponent } from './components/proyectos/new-proyectos.comp
 
 const routes: Routes = [
   {path: "body", component:BodyComponent},
-  {path: '', component:HeaderComponent},
+  {path: '', component:BodyComponent},
   {path: "iniciar-sesion", component:IniciarSesionComponent},
   {path: "new-experiencia", component: NewExperienciaComponent},
   {path: "edit-experiencia/:id", component: EditExperienciaComponent},
@@ -31,7 +31,7 @@ const routes: Routes = [
   {path: "edit-habilidades/:id", component:EditHabilidadesComponent},
   {path: "edit-acercaDe/:id", component:EditAcercaDeComponent},
   
-  {path:"",redirectTo:'header',pathMatch:'full' }
+  {path:"",redirectTo:'body',pathMatch:'full' }
 ]
 
 

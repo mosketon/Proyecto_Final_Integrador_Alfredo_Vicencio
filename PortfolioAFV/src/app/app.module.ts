@@ -47,6 +47,7 @@ import { NewProyectosComponent } from './components/proyectos/new-proyectos.comp
 import { EditProyectosComponent } from './components/proyectos/edit-proyectos.component';
 import { EditHabilidadesComponent } from './components/habilidades/edit-habilidades.component';
 import { NewHabilidadesComponent } from './components/habilidades/new-habilidades.component';
+import { interceptorProvider } from './services/interceptor-service';
 
 
 @NgModule({
@@ -91,7 +92,7 @@ import { NewHabilidadesComponent } from './components/habilidades/new-habilidade
     
   ],
   providers: [ PersonaService, EducacionService, EspecializacionesService, 
-    ExperienciaService, HabilidadesService, ProyectosService, AutenticacionService,TokenService
+    ExperienciaService, HabilidadesService, ProyectosService, AutenticacionService,TokenService, interceptorProvider,
     
   ],
   bootstrap: [AppComponent]
