@@ -108,5 +108,7 @@
       }
     }
   },
-  "defaultProject": "PortfolioAFV"
+  "cli": {
+    "analytics": "b1358f78-193b-49a1-ac33-298c9c04d448"
+  }
 }
