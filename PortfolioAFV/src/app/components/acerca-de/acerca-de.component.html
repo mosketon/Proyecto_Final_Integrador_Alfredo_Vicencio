@@ -27,9 +27,9 @@
 
 <div class="card xl-1" style="margin: .3em">
     <div class="row g-0">
-        <div class="col-sm-2">
+        <div class="col-sm-2" *ngFor="let persona of perso">
 
-            <img class="img-fluid" src="../../../assets/imagenes/fotoperfil.jpg" id="fotoperfil" alt="imagen perfil">
+            <img src="{{persona.fotoperfil}}" id="fotoperfil" alt="imagen perfil">
 
         </div>
 
