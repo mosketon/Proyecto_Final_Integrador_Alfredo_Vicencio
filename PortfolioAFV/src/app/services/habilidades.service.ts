@@ -7,7 +7,7 @@ import { habilidades } from '../model/habilidades.model';
   providedIn: 'root'
 })
 export class HabilidadesService {
-  habiURL = "http://localhost:8080/habilidades/";
+  habiURL = "https://backend-alfredo-vicencio.herokuapp.com/habilidades/";
   constructor(private httpClient: HttpClient) { }
   
   public lista(): Observable<habilidades []>{

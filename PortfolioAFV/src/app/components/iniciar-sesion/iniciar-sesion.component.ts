@@ -37,7 +37,7 @@ export class IniciarSesionComponent implements OnInit {
       this.tokenService.setToken(data.token);
       this.tokenService.setUserName(data.nombreUsuario);
       this.roles = data.authorities;
-      this.router.navigate(["/body"])
+      this.router.navigate([""])
     }, err => {
       this.isLogged = false;
       this.isLogginFail = true;

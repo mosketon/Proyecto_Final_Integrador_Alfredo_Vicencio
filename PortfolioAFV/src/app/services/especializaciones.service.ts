@@ -7,7 +7,7 @@ import { especializaciones } from '../model/especializaciones.model';
   providedIn: 'root'
 })
 export class EspecializacionesService {
-  espeURL = "http://localhost:8080/especializaciones/";
+  espeURL = "https://backend-alfredo-vicencio.herokuapp.com/especializaciones/";
   constructor(private httpClient: HttpClient) { }
   
   public lista(): Observable<especializaciones []>{
