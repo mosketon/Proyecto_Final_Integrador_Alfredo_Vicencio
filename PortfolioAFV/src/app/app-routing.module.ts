@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 import { BodyComponent } from './components/body/body.component';
@@ -10,7 +10,6 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditHabilidadesComponent } from './components/habilidades/edit-habilidades.component';
 import { NewHabilidadesComponent } from './components/habilidades/new-habilidades.component';
-import { HeaderComponent } from './components/header/header.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { EditProyectosComponent } from './components/proyectos/edit-proyectos.component';
 import { NewProyectosComponent } from './components/proyectos/new-proyectos.component';
