@@ -1,7 +1,13 @@
 <div>
   
-  <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Iniciar Sesion</button>
-  <button type="button" class="btn btn-outline-light" (click)="onLogOut()"*ngIf="isLogged">Cerrar Sesion</button>
+  <!--<button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Iniciar Sesion</button>
+  <button type="button" class="btn btn-outline-light" (click)="onLogOut()"*ngIf="isLogged">Cerrar Sesion</button>-->
+
+  <!--material-->
+
+  <button mat-raised-button color="primary" class="ancho button"  (click)="login()" *ngIf="!isLogged">Iniciar Sesion</button>
+  <button mat-raised-button color="primary" class="ancho button" (click)="onLogOut()"*ngIf="isLogged">Cerrar Sesion</button>
+
 
 
 </div>

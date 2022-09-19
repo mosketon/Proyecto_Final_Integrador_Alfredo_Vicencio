@@ -49,6 +49,13 @@ import { EditHabilidadesComponent } from './components/habilidades/edit-habilida
 import { NewHabilidadesComponent } from './components/habilidades/new-habilidades.component';
 import { interceptorProvider } from './services/interceptor-service';
 
+//Material
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import { materialize } from 'rxjs';
+
 
 @NgModule({
   declarations: [
@@ -89,12 +96,16 @@ import { interceptorProvider } from './services/interceptor-service';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [ PersonaService, EducacionService, EspecializacionesService, 
     ExperienciaService, HabilidadesService, ProyectosService, AutenticacionService,TokenService, interceptorProvider,
     
   ],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
