@@ -7,7 +7,7 @@ import { proyectos } from '../model/proyectos.model';
   providedIn: 'root'
 })
 export class ProyectosService {
-  proURL = "https://backend-alfredo-vicencio.herokuapp.com/proyectos/";
+  proURL = "https://fyrwqjdikn.us16.qoddiapp.com/proyectos/";
   constructor(private httpClient: HttpClient) { }
   
   public lista(): Observable<proyectos []>{
