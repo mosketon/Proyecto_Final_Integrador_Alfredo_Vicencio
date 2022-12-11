@@ -8,7 +8,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-perURL = 'https://fyrwqjdikn.us16.qoddiapp.com/personas/';
+perURL = 'https://okuqfhevsi.us17.qoddiapp.com/personas/';
 
     constructor(private httpClient: HttpClient) { }
   

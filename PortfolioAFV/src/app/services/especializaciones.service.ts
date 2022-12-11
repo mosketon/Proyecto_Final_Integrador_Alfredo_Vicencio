@@ -7,7 +7,7 @@ import { especializaciones } from '../model/especializaciones.model';
   providedIn: 'root'
 })
 export class EspecializacionesService {
-  espeURL = " https://fyrwqjdikn.us16.qoddiapp.com/especializaciones/";
+  espeURL = "https://okuqfhevsi.us17.qoddiapp.com/especializaciones/";
   constructor(private httpClient: HttpClient) { }
   
   public lista(): Observable<especializaciones []>{

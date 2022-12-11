@@ -7,7 +7,7 @@ import { educacion } from '../model/educacion.model';
   providedIn: 'root'
 })
 export class EducacionService {
-  eduURL = " https://fyrwqjdikn.us16.qoddiapp.com/educacion/";
+  eduURL = "https://okuqfhevsi.us17.qoddiapp.com/educacion/";
   constructor(private httpClient: HttpClient) { }
   
   public lista(): Observable<educacion []>{

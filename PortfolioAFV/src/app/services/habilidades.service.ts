@@ -7,7 +7,7 @@ import { habilidades } from '../model/habilidades.model';
   providedIn: 'root'
 })
 export class HabilidadesService {
-  habiURL = "https://fyrwqjdikn.us16.qoddiapp.com/habilidades/";
+  habiURL = "https://okuqfhevsi.us17.qoddiapp.com/habilidades/";
   constructor(private httpClient: HttpClient) { }
   
   public lista(): Observable<habilidades []>{

@@ -7,7 +7,7 @@ import { experiencia } from '../model/experiencia.model';
   providedIn: 'root'
 })
 export class ExperienciaService {
-expURL = "https://fyrwqjdikn.us16.qoddiapp.com/experiencia/";
+expURL = "https://okuqfhevsi.us17.qoddiapp.com/experiencia/";
 constructor(private httpClient: HttpClient) { }
 
 public lista(): Observable<experiencia []>{
